@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: dubbo-provider01
+server:
+  port: 7001
+management:
+  port: 7071
+dubbo:
+  scan:
+    base-packages: com.caihao.dubboprovider01.serviceimpl
+  application:
+    id: dubbo-provider
+    name: dubbo-provider
+    qos-port: 33333
+    qos-enable: false
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 12345
+  registry:
+    id: my-registry
+    address: N/A
+endpoints:
+  dubbo:
+    enabled: true

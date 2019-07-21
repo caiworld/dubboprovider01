@@ -1,0 +1,5 @@
+当使用install快捷方式报错时，可以使用下面的方式
+maven发布jar包到本地maven仓库命令：
+mvn clean install -DskipTests -Drat.skip=true
+注：-DskipTest这个不知道需不需要
+参考：（https://blog.csdn.net/yitian_z/article/details/90238994）
